@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "About Us";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+
+</hgroup>
+
+<article>
+    <p>
+        Md. Saddam Hossain Rana<br/>
+        Software Engineer<br/>
+        Personal Software Firm
+    </p>
+</article>
+
+<aside>
+    <h3>Sidebar</h3>
+    <p>
+        Here, you can use all menu bar
+    </p>
+    <ul>
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    </ul>
+</aside>

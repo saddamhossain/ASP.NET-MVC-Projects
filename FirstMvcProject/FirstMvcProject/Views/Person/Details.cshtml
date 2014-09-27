@@ -1,0 +1,30 @@
+﻿@model FirstMvcProject.Models.Person
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@ViewBag.saddam</h2>
+
+<fieldset>
+    <legend>Person</legend>
+
+    <div class="display-label">First</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.First)
+    </div>
+
+    <div class="display-label">Last</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Last)
+    </div>
+
+    <div class="display-label">BirthDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BirthDate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
